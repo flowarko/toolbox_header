@@ -14,7 +14,7 @@
 
 int delay_sec(int t);
 int delay_min(int t);
-int prim_check(int nr);
+int prim_check(int i);
 
 int delay_sec(int t) {
 	time_t tm;
@@ -44,17 +44,17 @@ int delay_min(int t) {
 	return 0;
 }
 
-int prim_check(int nr) {
+int prim_check(int i) {
 	int y = 0;
-	int i = 2;
+	int t = 2;
 	int prim = 0;
 	
-	while(i < nr) {
-		y = nr % i;
+	while(t < i) {
+		y = i % t;
 		if(y == 0) {
 			prim++;
 		}
-		i++;
+		t++;
 	}
 	
 	return prim;
