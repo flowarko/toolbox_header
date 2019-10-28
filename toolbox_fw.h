@@ -16,7 +16,7 @@
 
 int delay_sec(int t);
 int delay_min(int t);
-int prim_check(int i);
+bool prim_check(int i);
 int fsize(FILE* input);
 
 int delay_sec(int t) {
@@ -47,7 +47,7 @@ int delay_min(int t) {
 	return 0;
 }
 
-int prim_check(int i) {
+bool prim_check(int i) {
 	int y = 0;
 	int t = 2;
 	bool out = true;
