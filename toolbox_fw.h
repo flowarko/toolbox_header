@@ -65,7 +65,8 @@ bool prim_check(int i) {
 
 int fsize(FILE* input) {
 	int size = 0;
-	fseek (input , 0 , SEEK_END);
+	
+	fseek (input, 0,SEEK_END);
 	size = ftell(input);
 	rewind(input);
 	
