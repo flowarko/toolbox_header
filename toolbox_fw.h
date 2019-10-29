@@ -1,10 +1,11 @@
 /*
-*		Dev: 	Florian Warko
+*		Developer: 	flowarko
 *		Toolbox
-*		Using: 	delay_sec(seconds);
-*				delay_min(minutes);
-*				prim_check(number);
-*				fsize(file);
+*		Using: 		delay_sec(seconds);
+*					delay_min(minutes);
+*					prim_check(number);
+*					fsize(file);
+*					dectohex(number);
 */
 
 #ifndef TOOLBOX_FW_H
