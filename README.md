@@ -1,5 +1,7 @@
 # toolbox_header
 My toolbox for programming
+Language: C
+Developer: flowarko
 
 German:
 
@@ -12,3 +14,5 @@ Funktionen:
   prim_check(int i);   //Ist i eine Primzahl? Rückgabe boolean.
   
   fsize(FILE* input);  //Ermittelt die Größe einer Datei, die mit FILE* eingehängt wurde.
+
+  dectohex(int dec);   //Konvertiert eine Dezimalzahl in eine Hexadezimalzahl
