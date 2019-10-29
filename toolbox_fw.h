@@ -18,6 +18,7 @@ int delay_sec(int t);
 int delay_min(int t);
 bool prim_check(int i);
 int fsize(FILE* input);
+char dectohex(int dec);
 
 int delay_sec(int t) {
 	time_t tm;
@@ -71,6 +72,34 @@ int fsize(FILE* input) {
 	rewind(input);
 	
 	return size;
+}
+
+char dectohex(int dec) {
+	char tblock[1];
+	
+	if(dec < 10) {
+			tblock[0] = dec + 48;
+		}
+		else if(dec == 10) {
+			tblock[0] = 'a';
+		}
+		else if(dec == 11) {
+			tblock[0] = 'b';
+		}
+		else if(dec == 12) {
+			tblock[0] = 'c';
+		}
+		else if(dec == 13) {
+			tblock[0] = 'd';
+		}
+		else if(dec == 14) {
+			tblock[0] = 'e';
+		}
+		else if(dec == 15) {
+			tblock[0] = 'f';
+		}
+		
+	return tblock[0];
 }
 
 #endif /* TOOLBOX_FW_H */
