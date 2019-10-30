@@ -11,6 +11,7 @@
 #ifndef TOOLBOX_FW_H
 #define TOOLBOX_FW_H
 
+#include <stdio.h>
 #include <stdint.h>
 #include <stdbool.h>
 #include <time.h>
