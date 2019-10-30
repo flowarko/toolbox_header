@@ -6,6 +6,7 @@
 *					prim_check(number);
 *					fsize(file);
 *					dectohex(number);
+*		Version:	V0.0.1
 */
 
 #ifndef TOOLBOX_FW_H
